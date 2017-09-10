@@ -20,9 +20,10 @@ for story_heading in soup.find_all(class_= 'story-heading'):
 	print(story_heading.a)
 	articles += " \n" + str(story_heading.a)
 	
-	
+
 open_file = open("article_list.txt",'w')
 open_file.write(articles)
+open_file.write("i like peanut butter")
 open_file.close()
 	
 print("\nthere is also a copy of this in a file named \"article list\" beware however that running this program will rewrite that file every time this program is run")
